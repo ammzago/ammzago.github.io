@@ -3,14 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Imagem Circular</title>
+    <style>
+        /* Define um estilo circular para a imagem */
+        .circular-image {
+            width: 200px; /* Ajuste o tamanho conforme necessário */
+            height: 200px;
+            border-radius: 50%; /* Cria o efeito de círculo */
+            overflow: hidden; /* Garante que a imagem não "vaze" */
+            object-fit: cover; /* Faz a imagem preencher o círculo corretamente */
+            border: 5px solid #ddd; /* Opcional: Adiciona uma borda */
+        }
+    </style>
 </head>
 <body>
     <header>
         <h1>Bem-vindo ao meu portfólio!</h1>
         <p>Sou um desenvolvedor front-end apaixonado por tecnologia.</p>
     </header>
+    <img src="sua-imagem.jpg" alt="Minha Foto" class="circular-image">
     <section id="projects">
         <h2>Meus Projetos</h2>
         <ul>
