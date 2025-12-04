@@ -1,48 +1,501 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #121212;
-  color: #f0f0f0;
-}
-
+/* NAVBAR */
 .navbar {
   display: flex;
-  gap: 20px;
   justify-content: center;
-  padding: 1rem;
-  background-color: #1e1e1e;
-  position: sticky;
-  top: 0;
-  z-index: 100;
+  gap: 40px;
+  padding: 20px;
+  background: #00000033;
+  position: fixed;
+  width: 100%;
+  backdrop-filter: blur(4px);
+  z-index: 10;
 }
 
 .navbar a {
-  color: #ffffff;
+  color: white;
   text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .navbar a:hover {
-  text-decoration: underline;
+  color: #00aaff;
 }
 
-.header {
-  text-align: center;
-  padding: 2rem;
+/* HERO SECTION */
+.hero-section {
+  display: flex;
+  padding: 30px 80px;
+  background: linear-gradient(to right, #0a0a0a, #111827);
+  color: white;
+  align-items: top;
+}
+
+/* FOTO */
+.foto-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .foto {
-  width: 150px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
+  width: 460px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
+.foto-perfil {
+  width: 80%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
 }
 
-section h2 {
-  border-bottom: 1px solid #333;
-  padding-bottom: 0.5rem;
+/* INFO */
+.info-container {
+  flex: 1.2;
+  padding-left: 40px;
+  padding-top: 0px;
+}
+
+.nome {
+  font-size: 58px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.cargo {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* CONTATO */
+.contato p {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 8px 0;
+  font-size: 18px;
+}
+
+.icones {
+  display: flex;
+  gap: 18px;
+  margin-top: 20px;
+}
+
+.icones a {
+  color: white;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.icones a:hover {
+  color: #00aaff;
+}
+
+/* SEÇÃO EDUCAÇÃO */
+.education-section {
+  padding: 80px;
+  background: #071021;
+  color: white;
+  position: relative;
+}
+
+/* TÍTULO */
+.title-section {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.title-section .active {
+  color: #fff;
+}
+
+/* ÁREA COM SCROLL */
+.education-scroll {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 20px;
+  scroll-behavior: smooth;
+}
+
+/* SCROLL BAR */
+.education-scroll::-webkit-scrollbar {
+  width: 10px;
+}
+
+.education-scroll::-webkit-scrollbar-thumb {
+  background: #ffffffbb;
+  border-radius: 25px;
+}
+
+.education-card {
+  display: flex;
+  background: #0b162f;
+  border-radius: 12px;
+  padding: 25px;
+  margin-bottom: 35px;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeSlideUp 0.7s ease forwards;
+}
+
+.education-img {
+  width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 25px;
+}
+
+.education-info h2 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 6px 0;
+}
+
+.education-info h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.date {
+  font-size: 17px;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.description {
+  opacity: 0.85;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+/* BOTÃO LEARN MORE */
+.learn-more {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #00aaff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.learn-more:hover {
+  background: #0080cc;
+}
+
+/* ANIMAÇÃO */
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CERTIFICATION */
+.certification-section {
+  padding: 60px;
+  background: #061428;
+  color: white;
+  position: relative;
+}
+
+.certification-title {
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+/* Search bar */
+.search-bar {
+  width: 450px;
+  background: white;
+  padding: 12px 20px;
+  border-radius: 40px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-icon {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+/* Arrows */
+.arrow {
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.arrow:hover {
+  opacity: 1;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+/* Carousel container */
+.carousel {
+  display: flex;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  gap: 25px;
+  padding-bottom: 20px;
+}
+
+.carousel::-webkit-scrollbar {
+  height: 10px;
+}
+
+.carousel::-webkit-scrollbar-thumb {
+  background: #ffffff55;
+  border-radius: 20px;
+}
+
+.certificate-card {
+  width: 400px; 
+  min-width: 350px; 
+  height: 300px;
+  flex-shrink: 0;
+  background: #0b203e;
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: 0 0 15px #0006;
+  transition: 0.3s;
+}
+
+.certificate-card:hover {
+  transform: scale(1.03);
+}
+
+.certificate-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.certificate-info {
+  margin-top: 12px;
+}
+
+.certificate-info h2 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.certificate-info a {
+  display: inline-block;
+  margin-top: 6px;
+  color: #00aaff;
+  font-weight: bold;
+}
+
+.not-found {
+  font-size: 22px;
+  opacity: 0.7;
+}
+
+/* WORK EXPERIENCE */
+.work-section {
+  padding: 60px;
+  background: #0a1128;
+  color: white;
+}
+
+.work-title {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.work-container {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+/* LISTA DE ANOS */
+.years-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.year-item {
+  font-size: 32px;
+  font-weight: 700;
+  opacity: 0.3;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.year-item.active,
+.year-item:hover {
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+/* CARD DESCRITIVO */
+.experience-card {
+  background: #0f1a3a;
+  padding: 40px;
+  border-radius: 25px;
+  width: 500px;
+  min-height: 300px;
+  transition: 0.4s ease;
+}
+
+.card-role {
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.card-company {
+  font-size: 18px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+.card-period {
+  margin-top: 5px;
+  opacity: 0.7;
+}
+
+/* SKILLS */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.skill-pill {
+  padding: 8px 14px;
+  background: #091732;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* DESCRIÇÃO */
+.card-description {
+  white-space: pre-line;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.projects-about-section {
+  padding: 60px 40px;
+  background: #0a1128;
+  color: white;
+}
+
+/* ---------------- TITLE ---------------- */
+.section-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+.section-title span {
+  color: #ffffff;
+}
+
+/* ---------------- PROJECTS LIST ---------------- */
+.projects-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-bottom: 80px;
+}
+
+.project-card {
+  display: flex;
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 20px;
+  gap: 20px;
+  align-items: center;
+}
+
+.project-image {
+  width: 30%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.project-text {
+  width: 65%;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ---------------- ABOUT ME ---------------- */
+.about-container {
+  display: flex;
+  align-items: top;
+  gap: 20px;
+}
+
+.about-photo-wrapper {
+  width: 45%;
+}
+
+.about-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: opacity 0.6s ease-in-out;
+}
+
+.about-text-wrapper {
+  width: 55%;
+}
+
+.about-title {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.about-text {
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 15px;
 }
