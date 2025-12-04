@@ -2,7 +2,7 @@
   "name": "meu-portifolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ammzago.github.io/meu-portifolio",
+  "homepage": "https://ammzago.github.io",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
