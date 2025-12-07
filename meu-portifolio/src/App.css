@@ -1,4 +1,8 @@
 /* NAVBAR */
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
 .navbar {
   display: flex;
   justify-content: center;
@@ -499,3 +503,165 @@
   line-height: 1.6;
   margin-bottom: 15px;
 }
+
+/* ===========================================================
+   RESPONSIVIDADE (CELULAR E TABLET)
+=========================================================== */
+@media (max-width: 768px) {
+
+  /* ----- NAVBAR ----- */
+  .navbar {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+    position: static;
+    backdrop-filter: none;
+    background: rgb(0, 0, 17);
+  }
+
+  .navbar a {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  /* ----- HERO SECTION ----- */
+  .hero-section {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .foto-container {
+    width: 100%;
+  }
+
+  .foto {
+    width: 230px;
+    height: auto;
+  }
+
+  .info-container {
+    padding: 0;
+  }
+
+  .nome {
+    font-size: 38px;
+  }
+
+  .cargo {
+    font-size: 22px;
+  }
+
+  /* ----- EDUCAÇÃO ----- */
+  .education-section {
+    padding: 40px 20px;
+  }
+
+  .education-scroll {
+    max-height: none;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  .education-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .education-img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  /* ----- CERTIFICADOS ----- */
+  .certification-section {
+    padding: 40px 20px;
+  }
+
+  .search-bar {
+    width: 100%;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+  .carousel {
+    gap: 15px;
+    padding-bottom: 10px;
+  }
+
+  .certificate-card {
+    width: 260px;
+    min-width: 260px;
+    height: auto;
+  }
+
+  /* ----- WORK EXPERIENCE ----- */
+  .work-section {
+    padding: 40px 20px;
+  }
+
+  .work-container {
+    flex-direction: column;
+  }
+
+  .years-list {
+    flex-direction: row;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+  }
+
+  .experience-card {
+    width: 100%;
+    padding: 25px;
+  }
+
+  /* ----- PROJECTS ----- */
+  .projects-about-section {
+    padding: 40px 20px;
+  }
+
+  .project-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .project-image {
+    width: 100%;
+    height: 220px;
+  }
+
+  .project-text {
+    width: 100%;
+  }
+
+  /* ----- ABOUT ----- */
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-photo-wrapper {
+    width: 100%;
+  }
+
+  .about-photo {
+      width: 100%;
+      height: 400px;
+  }
+
+  .about-text-wrapper {
+    width: 100%;
+  }
+
+  .about-title {
+    font-size: 38px;
+  }
+}
+

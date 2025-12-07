@@ -16,20 +16,100 @@ import { motion, AnimatePresence } from "framer-motion";
     LISTA DE CERTIFICADOS
    ============================= */
 const certificates = [
+    {
+    title: "Java: Aplicação web com javascript",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/java1.png`,
+  },
+    {
+    title: "Java: Orientação a objeto",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/java2.png`,
+  },
+    {
+    title: "Java: Primeira aplicação",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/java3.png`,
+  },
+    {
+    title: "Linux: Conhecendo e utilizando o terminal",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/linux1.png`,
+  },
+    {
+    title: "Linux: Programas processos e pacotes",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/linux2.png`,
+  },
+  {
+    title: "Python: Validação de dados no padrão nacional",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python1.png`,
+  },
+  {
+    title: "Python: Listas e tuplas",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python2.png`,
+  },
+  {
+    title: "Python: conjuntos e dicionários",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python3.png`,
+  },
+  {
+    title: "Python: testes unitários",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python4.png`,
+  },
+  {
+    title: "Python: Orientação a objetos",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python5.png`,
+  },
+  {
+    title: "Python: Orientação a objetos e API",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python6.png`,
+  },
+  {
+    title: "Python: primeira aplicação",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python7.png`,
+  },
+  {
+    title: "Python: String e extraindo dados de uma URL",
+    institution: "Alura",
+    img: `${process.env.PUBLIC_URL}/certificates/python8.png`,
+  },
   {
     title: "GIT: Controle e compartilhe seu código",
     institution: "Alura",
-    img: `${process.env.PUBLIC_URL}/certificates/git - alura.png`,
+    img: `${process.env.PUBLIC_URL}/certificates/git.png`,
   },
   {
-    title: "Gestão de negócios",
+    title: "Gestão: Visão geral de processos e negócios",
     institution: "Alura",
-    img: `${process.env.PUBLIC_URL}/certificates/Gestão de negócios - alura.png`,
+    img: `${process.env.PUBLIC_URL}/certificates/gestao.png`,
+  },
+  {
+    title: "Formação: Bacharelado em ciências e tecnologia",
+    institution: "UNIFESP",
+    img: `${process.env.PUBLIC_URL}/certificates/faculdade.png`,
+  },
+  {
+    title: "Formação: Curso de inglês",
+    institution: "Academy School",
+    img: `${process.env.PUBLIC_URL}/certificates/ingles.jpg`,
+  },
+  {
+    title: "Formação: Técnico em automação industrial",
+    institution: "ETEC",
+    img: `${process.env.PUBLIC_URL}/certificates/tecnico.jpg`,
   },
     {
-    title: "Criando containers em docker",
+    title: "Docker: Criando containers em docker",
     institution: "Alura",
-    img: `${process.env.PUBLIC_URL}/certificates/container em docker - alura.png`,
+    img: `${process.env.PUBLIC_URL}/certificates/container.png`,
   },
 ];
 
@@ -191,7 +271,7 @@ function WorkExperience() {
 
   return (
     <section className="work-section" id="profissional">
-      <h1 className="work-title"><span>WORK</span> EXPERIENCE</h1>
+      <h1 className="work-title">WORK EXPERIENCE</h1>
 
       <div className="work-container">
         {/* LEFT SIDE — YEARS */}
@@ -276,10 +356,10 @@ function App() {
     <div className="App">
       {/* NAVBAR */}
       <nav className="navbar">
-        <a href="#sobre">Sobre</a>
-        <a href="#formacao">Formação Acadêmica</a>
-        <a href="#profissional">Experiência Profissional</a>
-        <a href="#cursos">Cursos</a>
+        <a href="#sobre">About me</a>
+        <a href="#formacao">Education experience</a>
+        <a href="#profissional">Work experience</a>
+        <a href="#cursos">Certification</a>
       </nav>
 
       {/* PRIMEIRA SEÇÃO */}
@@ -313,13 +393,13 @@ function App() {
           </div>
 
           <div className="icones">
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href="https://www.linkedin.com/in/amanda-zago-83b10b1ba/" target="_blank" rel="noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://instagram.com/ammzago" target="_blank" rel="noreferrer">
               <FaInstagram />
             </a>
-            <a href="#">
+            <a href="https://github.com/ammzago" target="_blank" rel="noreferrer">
               <FaCode />
             </a>
             <a
@@ -338,7 +418,7 @@ function App() {
       ====================================== */}
       <section className="education-section" id="formacao">
         <h1 className="title-section">
-          <span className="active">EDUCATION</span> &nbsp; EXPERIENCE
+          <span className="active">EDUCATION EXPERIENCE</span>
         </h1>
 
         <div className="education-scroll">
