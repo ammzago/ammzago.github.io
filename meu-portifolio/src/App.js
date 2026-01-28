@@ -422,7 +422,38 @@ function App() {
         </h1>
 
         <div className="education-scroll">
-          {/* CARD 1 */}
+                {/* CARD 1 */}
+          <div className="education-card fade-in">
+            <img
+              src={`${process.env.PUBLIC_URL}/usp.jpg`}
+              alt="USP/ESALQ"
+              className="education-img"
+            />
+
+            <div className="education-info">
+              <h2>MBA in software engeneering</h2>
+              <h3>USP ESALQ</h3>
+              <p className="date">May 2026 – Dec 2027</p>
+
+              <p className="description">
+                "According to the U.S. News & World Report, the Luiz de Queiroz College of Agriculture (ESALQ)
+                 at the University of São Paulo is ranked among the top institutions worldwide,
+                  highlighting its global leadership and academic excellence.” – THE World University Rankings"
+              </p>
+
+              <a
+                href="https://mbauspesalq.com/
+                "
+                target="_blank"
+                rel="noopener noreferrer"
+                className="learn-more"
+              >
+                Learn more →
+              </a>
+            </div>
+          </div>
+
+          {/* CARD 2 */}
           <div className="education-card fade-in">
             <img
               src={`${process.env.PUBLIC_URL}/unifesp.jpg`}
@@ -453,7 +484,7 @@ function App() {
             </div>
           </div>
 
-          {/* CARD 2 */}
+          {/* CARD 3 */}
           <div className="education-card fade-in">
             <img
               src={`${process.env.PUBLIC_URL}/etec.jpg`}
